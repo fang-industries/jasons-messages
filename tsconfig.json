@@ -16,7 +16,7 @@
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
-      "unplugin-icons/types/vue"
+      "./node_modules/unplugin-icons/types/vue"
     ],
 
     "baseUrl": ".",
