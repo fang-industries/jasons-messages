@@ -1,7 +1,11 @@
 <template>
   <router-link
     :to="props.name.toLowerCase().replaceAll(' ', '-')"
-    class="flex justify-between px-6 py-4 hover:bg-neutral-300 hover:bg-opacity-40 dark:hover:bg-neutral-700"
+    :class="
+      $route.name === props.name.toLowerCase().replaceAll(' ', '-')
+        ? 'flex justify-between bg-neutral-300 bg-opacity-40 px-6 py-4 dark:bg-neutral-700'
+        : 'flex justify-between px-6 py-4 transition duration-300 hover:bg-neutral-300 hover:bg-opacity-40 dark:hover:bg-neutral-700'
+    "
   >
     <div class="flex gap-x-4">
       <img :src="props.img" class="my-auto h-10 w-10 rounded-full" />
