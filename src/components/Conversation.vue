@@ -1,6 +1,14 @@
 <template>
   <router-link
-    :to="props.name.toLowerCase().replaceAll(' ', '-')"
+    :to="
+      props.name
+        .toLowerCase()
+        .replaceAll(' ', '-')
+        .replaceAll('”', '')
+        .replaceAll('“', '')
+        .replaceAll('.', '')
+        .replaceAll(',', '')
+    "
     :class="
       $route.name === props.name.toLowerCase().replaceAll(' ', '-')
         ? 'flex justify-between bg-neutral-300 bg-opacity-40 px-6 py-4 dark:bg-neutral-700'
