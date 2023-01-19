@@ -4,7 +4,7 @@
       <h1
         class="fixed top-0 w-full bg-neutral-100 bg-opacity-90 p-6 text-lg shadow-xl backdrop-blur-md dark:bg-neutral-900 dark:bg-opacity-90"
       >
-        {{ contact }}
+        {{ name }}
       </h1>
       <div class="overflow-y-auto">
         <div class="w-full py-32 px-6">
@@ -24,7 +24,7 @@
         <div
           class="fixed bottom-0 flex w-3/4 justify-center bg-neutral-100 bg-opacity-90 p-6 text-neutral-600 backdrop-blur-md dark:bg-neutral-700 dark:bg-opacity-90 dark:text-neutral-400"
         >
-          <p>Texting with {{ contact }} is not available right now.</p>
+          <p>Texting is not available right now.</p>
         </div>
       </div>
     </div>
@@ -34,7 +34,6 @@
 <script setup lang="ts">
 const props = defineProps<{
   time: string;
-  platform: string;
-  contact: string;
+  name: string;
 }>();
 </script>
