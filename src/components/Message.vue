@@ -8,7 +8,7 @@
         v-if="props.alignment === 'left'"
         class="max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800"
       >
-        <p class="h-fit break-all">
+        <p class="h-fit break-words">
           <slot />
         </p>
       </div>
@@ -21,7 +21,7 @@
         v-if="props.alignment === 'right'"
         class="max-w-[50%] rounded-2xl bg-blue-100 p-3 text-neutral-900 dark:bg-blue-300"
       >
-        <p class="h-fit break-all">
+        <p class="h-fit break-words">
           <slot />
         </p>
       </div>
