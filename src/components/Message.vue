@@ -6,11 +6,7 @@
     >
       <div
         v-if="props.alignment === 'left'"
-        :class="
-          props.alignment === 'left'
-            ? 'ml-16 max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800'
-            : 'max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800'
-        "
+        class="max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800"
       >
         <p class="h-fit break-all">
           <slot />
