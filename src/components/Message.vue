@@ -4,19 +4,10 @@
       v-if="props.alignment === 'left'"
       class="flex min-w-full justify-start gap-x-6 overflow-x-hidden"
     >
-      <img
-        v-if="img"
-        :src="img"
-        :class="
-          props.alignment === 'left'
-            ? 'mt-auto h-10 w-10 rounded-full'
-            : 'hidden'
-        "
-      />
       <div
         v-if="props.alignment === 'left'"
         :class="
-          props.alignment === 'left' && !img
+          props.alignment === 'left'
             ? 'ml-16 max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800'
             : 'max-w-[50%] rounded-2xl bg-neutral-200 p-3 dark:bg-neutral-800'
         "
@@ -44,7 +35,6 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  img?: string;
   alignment: "right" | "left";
 }>();
 </script>

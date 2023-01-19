@@ -8,7 +8,6 @@
     "
   >
     <div class="flex gap-x-4">
-      <img :src="props.img" class="my-auto h-10 w-10 rounded-full" />
       <div class="flex flex-col">
         <h2>{{ props.name }}</h2>
         <span class="text-neutral-600 dark:text-neutral-400">{{
@@ -24,7 +23,6 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  img: string;
   name: string;
   msg: string;
   time: string;
