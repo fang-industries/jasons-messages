@@ -15,13 +15,6 @@
               >
                 {{ time }}
               </p>
-              <div class="flex justify-center">
-                <p
-                  class="w-fit rounded-md bg-neutral-200 bg-opacity-50 py-2 px-4 text-center text-sm text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
-                >
-                  Texting with {{ contact }} ({{ platform }})
-                </p>
-              </div>
             </div>
             <div class="flex w-full flex-col gap-y-4">
               <slot />
